@@ -1,4 +1,4 @@
-package Activity1;
+package src.Activity1;
 
 import java.util.ArrayList;
 import java.util.List;
