@@ -7,10 +7,12 @@ import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
@@ -38,16 +40,20 @@ public class Activity1 {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         String jsonString = gson.toJson(user);
-        Files.write(Paths.get("user.json"), jsonString.getBytes());
+        Path path = Paths.get("user.json");
+        Files.write(path, jsonString.getBytes());
 
         System.out.println("user JSON already serialized and saved into user.json");
         System.out.println(jsonString);
+        System.out.println("user JSON Bytes(String): " + jsonString.getBytes().length);
+        System.out.println("user JSON Bytes(File): " + Files.size(path));
 
-         String jsonFromFile = new String(Files.readAllBytes(Paths.get("user.json")));
+         String jsonFromFile = new String(Files.readAllBytes(path));
 
          User deserializedUser = gson.fromJson(jsonFromFile, User.class);
 
         System.out.println("Deserialized user JSON - Name: " + deserializedUser.getName());
+
 
 
     }catch (IOException e){
@@ -65,6 +71,7 @@ public class Activity1 {
         }
 
         System.out.println("\nXML serialized and saved in user.xml");
+        System.out.println("user XML bytes (File): " + Files.size(Paths.get("user.xml")));
 
         Unmarshaller unmarshaller = context.createUnmarshaller();
 
