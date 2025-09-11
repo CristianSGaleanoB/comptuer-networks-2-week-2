@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<User>
+    <name>Cristian Galeano</name>
+    <email>cgaleano@jala.university</email>
+    <id>1</id>
+    <ipAddress>192.168.1.14</ipAddress>
+    <deviceName>CGaleano</deviceName>
+    <os>Ubuntu LTS</os>
+    <startConnection>2025-07-30T02:00:00</startConnection>
+    <endConnection>2025-10-01T15:00:00</endConnection>
+    <errors>
+        <error>
+            <actualDate>2025-08-01T03:00:00</actualDate>
+            <message>Connection timeout</message>
+            <priority>MEDIUM</priority>
+        </error>
+        <error>
+            <actualDate>2025-10-01T12:00:00</actualDate>
+            <message>Low Battery</message>
+            <priority>LOW</priority>
+        </error>
+    </errors>
+</User>

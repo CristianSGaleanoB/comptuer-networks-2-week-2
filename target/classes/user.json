@@ -1,0 +1,22 @@
+{
+  "name": "Cristian Galeano",
+  "email": "cgaleano@jala.university",
+  "id": 1,
+  "ipAddress": "192.168.1.14",
+  "deviceName": "CGaleano",
+  "os": "Ubuntu LTS",
+  "startConnection": "2025-07-30T02:00:00",
+  "endConnection": "2025-10-01T15:00:00",
+  "errors": [
+    {
+      "actualDate": "2025-08-01T03:00:00",
+      "message": "Connection timeout",
+      "priority": "MEDIUM"
+    },
+    {
+      "actualDate": "2025-10-01T12:00:00",
+      "message": "Low Battery",
+      "priority": "LOW"
+    }
+  ]
+}
