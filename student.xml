@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Student>
+    <name>Cristian</name>
+    <lastName>Galeano</lastName>
+    <grade>A</grade>
+    <id>1</id>
+    <age>21</age>
+    <address>
+        <country>Colombia</country>
+        <state>Cundinamarca</state>
+        <city>Funza</city>
+        <street>Cll 18</street>
+        <number>#15-25</number>
+    </address>
+    <phone>3204067486</phone>
+</Student>

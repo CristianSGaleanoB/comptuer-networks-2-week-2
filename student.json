@@ -1,0 +1,15 @@
+{
+  "name": "Cristian",
+  "lastName": "Galeano",
+  "grade": "A",
+  "id": 1,
+  "age": 21,
+  "address": {
+    "country": "Colombia",
+    "state": "Cundinamarca",
+    "city": "Funza",
+    "street": "Cll 18",
+    "number": "#15-25"
+  },
+  "phone": "3204067486"
+}
